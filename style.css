@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    background-color: black;
+}
+header{
+    padding: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.header-left img{
+    max-width: 170px;
+}
+header button{
+    margin-right: 5px;
+    border:0;
+    background-color: #333;
+    color:white;
+    padding:5px;
+    border-radius: 5px;
+    font-size:18px;
+}
+main{
+    height: calc(100vh - 130px);
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    height:100%;
+    overflow-y: auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.people{
+    position:relative;
+    margin: 3px;
+}
+.people img{
+    width:250px;
+    max-width:250px;
+    height:150px;
+    border-radius: 5px;
+    background-size: cover;
+}
+.uno {
+    border:2px solid #39eb39;
+}
+.fa-microphone-slash{
+    color:red;
+}
+.nome{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    color:white;
+    padding:5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 80%;
+}
+footer{
+    background-color:rgb(30 30 30);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    color:white;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+footer .fa{
+    font-size: 22px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+footer p{
+    font-size: 13px;
+    display: inline-block;
+    cursor: pointer;
+}
+.footer-left{
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+.footer-center{
+    text-align: center;
+    flex-grow:1;
+    padding: 5px;
+}
+.center{
+    display: inline-block;
+    margin: 0 15px;
+}
+.center p{
+    display: block;
+}
+.diverso{
+    color:#39eb39;
+}
+.footer-right{
+    flex-shrink: 0;
+}
+.footer-right button{
+    color: red;
+    height: 100%;
+    width: 100%;
+    background-color:#464646;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    border:none;
+    padding: 17px;
+}
+@media (max-width: 767px){
+    .footer-center{
+        display: none;
+    }
+    footer .fa{
+        font-size: 15px;
+    }
+    footer p{
+        font-size:8px;
+    }
+    .center{
+        margin:0 5px;
+    }
+     #stupido{
+        display: none;
+    }
+
+}
